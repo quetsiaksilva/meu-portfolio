@@ -1,0 +1,231 @@
+/* Fonte Dancing Script, utilizada no nome do menu e no rodapé */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+/* Define a cor de fundo de toda a página */
+body {
+    background-color: black;
+}
+
+/* Estilização do nome no menu */
+.navbar-brand,
+.navbar-brand:hover,
+.navbar-brand:focus {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-family: "Dancing Script", cursive;
+}
+
+/* Aparência geral da barra de navegação */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Separa o nome dos links */
+    align-items: center;            /* Centraliza os elementos verticalmente */
+    background-color: #320011;
+    color: #ffffff;
+    padding: 1rem 2rem;
+}
+
+/* Cor dos textos dos links do menu */
+.navbar .navbar-nav .nav-link {
+    color: white;
+}
+
+/* Cor do nome no cabeçalho */
+.navbar .navbar-brand {
+    color: white;
+}
+
+/* Efeito ao passar o mouse sobre os links do menu */
+.navbar .navbar-nav .nav-link:hover {
+    color: rgb(255, 0, 144);
+}
+
+/* Tamanho do título principal.
+   clamp() adapta o tamanho à tela, respeitando
+   um valor mínimo e um valor máximo. */
+h1 {
+    font-size: clamp(3rem, 4.5vw, 4rem);
+}
+
+/* Tamanho dos títulos secundários */
+h2 {
+    font-size: clamp(2rem, 3vw, 3rem);
+}
+
+/* Aplica Playfair Display aos títulos principais
+   e aos títulos h2 que estão dentro das seções */
+h1,
+section h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+
+/* Define a cor e o espaçamento do conteúdo principal */
+.container.py-5 {
+    color: #ffffff;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/* Deixa os títulos e parágrafos das seções brancos */
+section h2,
+section h3,
+section p {
+    color: white;
+}
+
+
+/* Configurações compartilhadas entre as seções.
+   O seletor com # identifica cada seção pelo seu ID. */
+#sobre,
+#habilidades,
+#projetos,
+#curriculo {
+    text-align: center;
+
+    /* Espaço interno: distância entre a borda e o conteúdo */
+    padding: 60px 50px;
+
+    /* Espaço externo: distância entre uma seção e outra */
+    margin: 50px auto;
+
+    color: white;
+
+    /* Aparência das bordas */
+    border: 2px solid rgb(255, 0, 144);
+    border-radius: 15px;
+
+    /* Limita a largura das seções */
+    max-width: 1000px;
+}
+
+/* Espaçamento abaixo dos títulos das seções */
+#sobre h2,
+#habilidades h2,
+#projetos h2,
+#curriculo h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+/* Centraliza a lista dentro da seção,
+   mas mantém os textos alinhados à esquerda */
+#habilidades ul {
+    display: inline-block;
+    text-align: left;
+    color: white;
+    margin-bottom: 30px;
+}
+
+/* Espaçamento entre os itens das listas */
+#habilidades li {
+    margin-bottom: 10px;
+}
+
+
+/* Aparência geral do rodapé */
+footer {
+    background-color: #320011;
+    color: #ffffff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Estilização do título do rodapé */
+.footer_titulo {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-family: "Dancing Script", cursive;
+}
+
+/* Aparência dos ícones das redes sociais */
+.footer_redes a {
+    color: white;
+    font-size: 35px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* Efeito ao passar o mouse sobre os ícones */
+.footer_redes a:hover {
+    color: rgb(255, 0, 144);
+    transform: translateY(-5px);
+}
+
+
+/* Alinhamento e espaçamento das informações */
+.footer_informacoes {
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Espaçamento entre os parágrafos */
+.footer_informacoes p {
+    margin: 8px 0;
+}
+
+/* Aparência dos links de e-mail e telefone */
+.footer_informacoes a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Efeito ao passar o mouse sobre os contatos */
+.footer_informacoes a:hover {
+    text-decoration: underline;
+}
+
+
+/* Define as dimensões e a aparência da imagem */
+.foto-perfil {
+    width: 400px;
+    height: 450px;
+    object-fit: cover; /* Evita distorcer a imagem */
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Espaçamento dos títulos das seções */
+#sobre h2,
+#habilidades h2,
+#projetos h2,
+#curriculo h2 {
+    margin-bottom: 30px;
+}
+
+/* Espaçamento dos parágrafos */
+#sobre p,
+#projetos p,
+#curriculo p {
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+/* Distância entre um projeto e outro */
+.projeto {
+    margin-bottom: 60px;
+}
+
+/* Evita espaço extra depois do último projeto */
+.projeto:last-child {
+    margin-bottom: 0;
+}
+
+/* Espaçamento entre os itens das listas */
+#habilidades li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Distância entre as listas */
+#habilidades ul {
+    margin-bottom: 40px;
+}
+
+/* Fonte do título Fale comigo */
+.footer_titulo h2 {
+    font-family: "Dancing Script", cursive;
+}
